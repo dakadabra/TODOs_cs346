@@ -1,0 +1,39 @@
+@import "config.css";
+
+.settings {
+    -fx-padding: 16px;
+    -fx-background-color: -background--primary;
+}
+
+.labels__title {
+    -fx-text-fill: -text--primary;
+}
+
+.themes__title {
+    -fx-text-fill: -text--primary;
+}
+
+.themes__button {
+    -fx-background-color: -background--primary;
+    -fx-text-fill: -button--confirm;
+    -fx-border-style : solid;
+    -fx-border-color: -button--confirm;
+     -fx-border-width: 1px;
+}
+
+.themes__button:hover {
+    -fx-text-fill: -text--negative;
+    -fx-background-color: -button--confirm;
+}
+
+.settings__label-text {
+    -fx-padding: 0px 8px
+}
+
+.settings__color-picker {
+    -fx-max-width: 50px;
+}
+
+.settings__label {
+    -fx-padding: 2px 8px 2px 16px;
+}

@@ -1,0 +1,83 @@
+@import "config.css";
+
+.group {
+    -fx-background-color: -background--primary;
+    -fx-padding: 8px;
+}
+
+.group__item-list__container .viewport{
+    -fx-background-color: transparent;
+}
+
+.group__item-list {
+    -fx-background-insets: 0px;
+    -fx-padding: 0px 12px 0px 0px;
+}
+
+.group__title {
+    -fx-text-fill: -text--primary;
+}
+
+.group__create-item {
+    -fx-text-fill: -text--secondary;
+    -fx-alignment: center;
+    -fx-background-color: -background--primary;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: -border--primary;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.sort {
+    -fx-align: baseline-center;
+}
+
+.sort__label {
+    -fx-text-fill: -text--primary;
+}
+
+.sort .list-view .list-cell {
+    -fx-text-fill: -text--negative;
+    -fx-background-color: -background--negative;
+    -fx-padding: 8px;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 1px;
+    -fx-border-color: -border--negative;
+}
+
+.sort .list-view .list-cell:hover,
+.sort .list-view .list-cell:focused {
+    -fx-text-fill: -text--primary;
+    -fx-background-color: -background--primary;
+}
+
+.sort__picker {
+    -fx-alignment: center;
+    -fx-border-color: -border--primary;
+    -fx-background-color: -background--negative;
+    -fx-text-fill: -text--negative;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-padding: 0px 0px 0px 12px;
+}
+
+.sort__picker > .list-cell {
+    -fx-text-fill: -text--negative;
+}
+
+.sort__picker .arrow {
+    -fx-background-color: -background--primary;
+}
+
+.sort__desc-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -text--primary;
+    -fx-border-style: hidden;
+}
+
+.logout-button {
+    -fx-background-color: -background--negative;
+    -fx-padding: 8px 16px 8px 16px;
+    -fx-text-fill: -text--negative;
+}

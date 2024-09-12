@@ -1,0 +1,169 @@
+/* region modifications to modena.css */
+.text-field:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.text-field {
+    -fx-highlight-fill: -text-highlight;
+    -fx-highlight-text-fill: -text--negative;
+}
+
+/* hide empty list cells */
+.list-cell:empty {
+    visibility: hidden;
+}
+
+/* remove combo box focus highlighting */
+.combo-box-base:editable,
+.combo-box-base:editable > .text-field,
+.combo-box-base:editable:focused,
+.combo-box-base:editable:focused > .text-field {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > * {
+    -fx-background-color: transparent;
+}
+/* apply background-radius to scroll-pane.scroll-bar,
+    scroll-pane.viewport, and scroll-pane.corner */
+.scroll-pane > * > * {
+    -fx-background-radius: 12px;
+    -fx-background-color: transparent;
+}
+
+/* remove default scroll bar background */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+/* set scroll bar thumb color and size */
+.scroll-bar .thumb {
+    -fx-background-insets: 1.5 0 0;
+    -fx-background-color: -background--secondary;
+}
+
+/* region hide scroll bar arrows */
+/* explainer here: https://blog.ngopal.com.np/2012/07/11/customize-scrollbar-via-css/ */
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-padding: 0px 0px 10px 0px;
+}
+
+.scroll-bar .increment-button .increment-arrow,
+.scroll-bar .decrement-button .decrement-arrow  {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+/* end region hide scroll bar arrows */
+
+
+.date-picker .text-field {
+    -fx-border-style : solid;
+    -fx-border-color: -border--secondary;
+    -fx-border-width: 0.5px;
+    -fx-text-fill: -text--secondary;
+    -fx-background-color: transparent;
+}
+
+.date-picker:focused {
+    -fx-background-color: transparent;
+}
+/* end region modifications to modena.css*/
+
+/* region color variables */
+/*
+* {
+    /* DEFAULT: background-grey */
+    -background--secondary: #585252;
+    -text--secondary: #585252;
+    -text-highlight: #585252;
+    -border--secondary: #585252;
+
+    /* DEFAULT: background-white */
+    -text--negative: #FFFFFF;
+    -text-highlight--negative: #FFFFFF;
+    -background--primary: #FFFFFF;
+    -border--negative: #FFFFFF;
+
+    /* DEFAULT: primary-black */
+    -background--negative: #171717;
+    -border--primary: #171717;
+    -text--primary: #171717;
+
+    /* DEFAULT: selection-blue */
+    -button--confirm: #0029FF;
+    -selection--hover: #0029FF;
+
+    /* DEFAULT: accent-purple */
+    -selection--static: #8000FF;
+
+    /* DEFAULT: burnt-orange */
+    -foreground--accent: #833F00;
+
+    /* DEFAULT: secondary-beige */
+    -background--accent: #FFBD80;
+}*/
+/* end region color variables */
+
+/* region font installation */
+@font-face {
+    src: url("/type/cydnel.ttf");
+}
+@font-face {
+    src: url("/type/inter-variable.ttf");
+}
+@font-face {
+    src: url("/type/sourcecodepro-variable.ttf");
+}
+@font-face {
+    src: url("/type/sourcecodepro-italic-variable.ttf");
+}
+/* end region font installation */
+
+/* region typography */
+.title-min {
+    -fx-font-family: "Cydnel";
+    -fx-font-size: 42;
+}
+
+.title-max {
+    -fx-font-family: "Cydnel";
+    -fx-font-size: 86;
+}
+
+.subtitle {
+    -fx-font-family: "Inter";
+    -fx-font-size: 24;
+}
+
+.h1 {
+    -fx-font-family: "Inter";
+    -fx-font-size: 36;
+    -fx-font-weight: bold;
+}
+
+.h2 {
+    -fx-font-family: "Source Code Pro";
+    -fx-font-size: 36;
+}
+
+.body {
+    -fx-font-family: "Source Code Pro";
+    -fx-font-size: 25;
+}
+
+.label-min {
+    -fx-font-family: "Source Code Pro";
+    -fx-font-size: 12;
+}
+
+.label-max {
+    -fx-font-family: "Source Code Pro";
+    -fx-font-size: 16;
+}
+/* end region typography */
